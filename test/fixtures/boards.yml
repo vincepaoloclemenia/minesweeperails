@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  bombs: MyString
+  tile_count: 1
+  height: 1
+  width: 1
+  email: MyString
+  name: MyString
+  bombs_placed: 1
+
+two:
+  bombs: MyString
+  tile_count: 1
+  height: 1
+  width: 1
+  email: MyString
+  name: MyString
+  bombs_placed: 1
