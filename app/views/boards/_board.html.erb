@@ -1,0 +1,7 @@
+
+<%= link_to board_path(board), class: 'mt-3 block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700' do %>
+  <h6 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"><%= board.name %></h5>
+  <p class="font-normal text-gray-700 dark:text-gray-400">From: <span class='font-bold'><%= board.user_email %></span></p>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Dimension: <span class='font-bold'><%= board.height %> x <%= board.width %></span></p>
+  <p class="font-normal text-gray-700 dark:text-gray-400">Width: <span class='font-bold'></span></p>
+<% end %>

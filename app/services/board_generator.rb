@@ -1,10 +1,10 @@
 class BoardGenerator
   PERCENTAGE_PER_AREA = 0.2 # 20%
 
-  def initialize(height:, width:, return_2d_array: false)
+  def initialize(height:, width:, string: '', return_2d_array: false)
     @height = height
     @width = width
-    @string = ''
+    @string = string
     @return_2d_array = return_2d_array
     @array = []
     @errors = []

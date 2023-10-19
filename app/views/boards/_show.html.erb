@@ -1,0 +1,31 @@
+<div class="flex flex-wrap">
+  <div class="w-full flex">
+    <div class="w-1/2">
+      <h1 class="text-4xl font-bold text-gray-700 sm:truncate pl-12 pt-8">
+        <%= board.name %>
+      </h1>
+  </div>
+</div>
+
+<div class="w-full ml-12 mt-10 mr-12 mb-12">
+  <div class="w-full ml-12 mr-12 mb-12 justify-evenly" id='board-renderer'>
+    <% board.draw_board.each do |row| %>
+      <div class='flex'>
+        <% row.each do |col|%>
+          <% if col.nil? %>
+            <div class='tile m-1'></div>
+          <% else %>
+            <div class='m-1'>
+              <%= render inline: Rails.root.join('public/mine.svg').read %>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    <% end %>
+  </div>
+
+  <div class='ml-5'>
+    <%= link_to 'Go back', boards_path, class: "ml-15 text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800" %>
+  </div>
+</div>
+

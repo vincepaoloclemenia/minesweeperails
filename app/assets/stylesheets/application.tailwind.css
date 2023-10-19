@@ -11,3 +11,10 @@
 }
 
 */
+
+.tile {
+  height: 18px;
+  width: 18px;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+}
